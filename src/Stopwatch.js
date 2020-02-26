@@ -54,7 +54,8 @@ Stopwatch.prototype.reset = function(event) {
 };
 
 Stopwatch.prototype.update = function(event) {
-	var self = this;
+    
+    var self = this;
 
 	var minutesDisplay = document.getElementById(
         self.options.minutesDisplayId
@@ -66,19 +67,23 @@ Stopwatch.prototype.update = function(event) {
 		self.options.millisecondsDisplayId
 	);
 
+    //Gets minutes of counter
 	var minutes = Math.floor(
         self.millisecondsCounter / 60000
     );
 
+    //Gets remaining seconds of counter
 	var seconds = Math.floor(
         (self.millisecondsCounter % 60000) / 1000
     );
-    
+
+    //Gets remaining milliseconds
 	var milliseconds = Math.floor(
 		((self.millisecondsCounter % 60000) % 1000) / 10
 	);
 
 	minutesDisplay.value = minutes;
 	secondsDisplay.value = seconds;
-	millisecondsDisplay.value = milliseconds;
+    millisecondsDisplay.value = milliseconds;
+    
 };
