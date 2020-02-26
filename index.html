@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Timer</title>
+		<style>
+			input {
+				width: 50px;
+				text-align: right;
+			}
+		</style>
+	</head>
+	<body>
+
+        <select name="choice" id="choice">
+            <option value="" disabled selected>Stopwatch or timer?</option>
+            <option value="Stopwatch" >Stopwatch</option>
+            <option value="Timer" >Timer</option>
+        </select>
+
+		<div id="container">
+            <input 
+                type="number"
+                id="minutes"
+                value="0"
+            />m
+            <input 
+                type="number"
+                id="secods"
+                value="0"
+            />s
+			<input
+				type="number"
+				id="milliseconds"
+				value="0"
+			/>ms
+        </div>
+        
+		<button id="start">Start</button>
+		<button id="stop">Stop</button>
+        <button id="reset">Reset</button>
+        
+	</body>
+    <script src="./Timer.js"></script>
+    <script src="./Stopwatch.js"></script>
+    <script src="./App.js"></script>
+    <script src="./index.js"></script>
+</html>
