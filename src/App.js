@@ -10,7 +10,7 @@ var App = function(options){
 App.prototype.buildEventListeners = function () {
 
     var self = this;
-    var optionSelect =  document.getElementById(this.options.selectId);
+    var optionSelect =  document.getElementById(this.options.appOptionsSelectId);
 
     optionSelect.addEventListener("change", function(){      
 
