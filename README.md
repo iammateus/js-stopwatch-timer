@@ -1,1 +1,1 @@
-# TimerAndStopwatch
+# js-stopwatch-timer
